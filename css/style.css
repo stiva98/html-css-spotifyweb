@@ -1,7 +1,7 @@
 @import "reset.css";
 @import "general.css";
 @import "color.css";
-
+@import "scrollbar.css";
 
 /*
 HEADER
@@ -33,10 +33,21 @@ aside {
 
 .section-overflow .container > h2 {
     color: white;
-    padding-top: 1.25rem;
+    padding: 1.25rem 0;
 }
+.section-overflow .container > p {
+    color: var(--second-color);
+    font-size: 0.7rem;
+    padding-bottom: 1.25rem;
+}
+
+/*IMMAGINI*/
+
 .dimension-image {
     width: 100%;
+}
+.square {
+    border-radius: 50%;
 }
 /*
 FOOTER
@@ -54,13 +65,26 @@ HOVER E PSEUDO ELEMENTI
     content: "";
     width: 1.25rem;
     height: 0.125rem;
-    background-color: #ADFF2F;
+    background-color: var(--sixth-color);
     display: block;
     margin: 5px auto;
 }
 .my-button-header:hover {
     transform: scale(1.2);
 }
+.section-overflow .container nav ul li a:hover {
+    color: var(--fiveth-color);
+}
+.image-cover:hover .dimension-image {
+    background-color: black;
+    opacity: 0.3;
+}
+.image-cover:hover .overlay {
+    opacity: 1;
+}
+
+/*----RESPONSIVE-----*/
+
 /*Tablet: fino a 1100px*/
 @media screen and (max-width:1100px) {
 
