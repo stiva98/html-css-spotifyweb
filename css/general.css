@@ -1,0 +1,41 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    padding: 0 .625rem;
+}
+.section-overflow {
+    overflow-y: auto;
+    height: 100%;
+    padding-top: 5rem;
+}
+.section-overflow .container nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.section-overflow .container nav ul li {
+    padding: .3125rem .625rem;
+}
+.section-overflow .container nav ul li A {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+/*
+MY-BUTTONS
+*/
+.my-button-header {
+    border-top-left-radius: 1.75rem;
+    border-top-right-radius: 1.75rem;
+    border-bottom-left-radius: 1.75rem;
+    border-bottom-right-radius: 1.75rem;
+    padding: .625rem 1.875rem;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: white;
+    color: white;
+    font-weight: bold;
+    font-size: 0.5rem;
+}

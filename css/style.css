@@ -1,0 +1,43 @@
+@import "reset.css";
+@import "general.css";
+@import "color.css";
+
+
+/*
+HEADER
+*/
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: calc(100% - 12.5rem);
+    padding: 1.25rem;
+    position: fixed;
+    top: 0;
+    text-align: right;
+}
+/*
+MAIN-CONTAINER
+*/
+.main-container {
+    height: calc(100vh - 6.25rem);
+    display: flex;
+}
+aside {
+    width: 12.5rem;
+    background-color: black;
+}
+
+.width-right {
+    width: calc(100% - 12.5rem);
+    background-color: var(--first-color)
+}
+a::after {
+    content: "";
+}
+/*
+FOOTER
+*/
+
+footer {
+    height: 6.25rem;
+    background-color: var(--third-color);
+}
