@@ -30,8 +30,13 @@ aside {
     width: calc(100% - 12.5rem);
     background-color: var(--first-color)
 }
-a::after {
-    content: "";
+
+.section-overflow .container > h2 {
+    color: white;
+    padding-top: 1.25rem;
+}
+.dimension-image {
+    width: 100%;
 }
 /*
 FOOTER
@@ -40,4 +45,48 @@ FOOTER
 footer {
     height: 6.25rem;
     background-color: var(--third-color);
+}
+
+/*
+HOVER E PSEUDO ELEMENTI
+*/
+.mini-border::after {
+    content: "";
+    width: 1.25rem;
+    height: 0.125rem;
+    background-color: #ADFF2F;
+    display: block;
+    margin: 5px auto;
+}
+.my-button-header:hover {
+    transform: scale(1.2);
+}
+/*Tablet: fino a 1100px*/
+@media screen and (max-width:1100px) {
+
+    .my-card {
+        width: calc((100% / 4) - 1.25rem);
+    }    
+}
+
+/*Mobile normale: fino a 700px*/
+@media screen and (max-width:700px) {
+
+    .my-card {
+        width: calc((100% / 2) - 1.25rem);
+    }    
+}
+
+/*Mobile piccolo: fino a 600px*/
+@media screen and (max-width:600px) {
+    
+    aside {
+        width: 3.75rem;
+    }
+    header {
+        width: calc(100% - 3.75rem);
+    }
+    .width-right {
+        width: calc(100% - 3.75rem);
+    }
 }

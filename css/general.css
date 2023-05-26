@@ -18,11 +18,33 @@ body {
 .section-overflow .container nav ul li {
     padding: .3125rem .625rem;
 }
-.section-overflow .container nav ul li A {
-    color: rgba(255, 255, 255, 0.5);
+.section-overflow .container nav ul li a {
+    color: var(--second-color);
     font-weight: bold;
     font-size: 0.8rem;
     text-decoration: none;
+}
+.my-cards-music {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -.625rem;
+    border: 2px solid red;
+}
+.my-card {
+    width: calc((100% / 6) - 1.25rem);
+    margin: 0 .625rem;
+    border: 2px solid blue;
+}
+.song > h4 {
+    text-align: center;
+    color: white;
+    padding: .3125rem 0;
+    font-size: 0.8rem;
+}
+.song > p {
+    text-align: center;
+    color: var(--second-color);
+    font-size: 0.7rem;
 }
 /*
 MY-BUTTONS
@@ -38,4 +60,5 @@ MY-BUTTONS
     color: white;
     font-weight: bold;
     font-size: 0.5rem;
+    transition: transform 0.5s;
 }

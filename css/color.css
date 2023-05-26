@@ -1,6 +1,6 @@
 :root {
     --first-color:#141922;
-    --second-color:#969696;
+    --second-color:rgba(255, 255, 255, 0.5);
     --third-color: #6a6a6a;
     --fourth-color: #4a4a4a;
 }
