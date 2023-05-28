@@ -4,6 +4,17 @@ body {
 .container {
     padding: 0 .625rem;
 }
+.container-border {
+    padding-left: .4375rem;
+    padding-right: .625rem;
+}
+.container-playlist {
+    padding: 0 .625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
 .section-overflow {
     overflow-y: auto;
     height: 100%;
@@ -55,6 +66,9 @@ body {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+}
+.profile > p {
+    color: white;
 }
 /*
 MY-BUTTONS

@@ -14,6 +14,81 @@ header {
     top: 0;
     text-align: right;
 }
+
+/*
+ASIDE
+*/
+.logo {
+    padding: 1.0625rem 0;
+    width: 70%;
+}
+.mobile {
+    display: none;
+}
+.menu {
+    display: flex;
+}
+.my-col-icons-left {
+    width: 20%;
+}
+.my-col-icons-left > img {
+    width: 80%;
+    filter: opacity(0.8);
+}
+#color-svg {
+    filter: opacity(0.5);
+}
+.my-col-icons-right {
+    width: 80%;
+}
+.my-col-icons-right > h4 {
+    padding: .3125rem 0;
+    color: var(--seventh-color);
+    font-size: .875rem;
+}
+#color-h4 {
+    color: var(--second-color);
+}
+.border {
+    border-left: .1875rem solid var(--sixth-color);
+}
+section .container > h2{
+    color: white;
+    padding-top: 1.25rem;
+    padding-bottom: .625rem;
+    font-size: .875rem;
+}
+.my-col-playlist-left {
+    width: 30%;
+}
+.my-col-playlist-right {
+    width: 70%;
+}
+.my-col-playlist-left > i {
+    color: var(--second-color);
+}
+.my-col-playlist-right > h4{
+    color: var(--second-color);
+    font-size: .875rem;
+    padding: .9375rem 0;
+}
+.link-playlist ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+.link-playlist ul li {
+    padding: .625rem 0;
+}
+.link-playlist ul li a {
+    color: var(--second-color);
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+.link-playlist {
+    overflow-y: auto;
+    height: 35vh;
+}
 /*
 MAIN-CONTAINER
 */
@@ -49,6 +124,9 @@ aside {
 .square {
     border-radius: 50%;
 }
+.border {
+    border-left: 3px solid var(--sixth-color);
+}
 /*
 FOOTER
 */
@@ -82,6 +160,12 @@ HOVER E PSEUDO ELEMENTI
 .image-cover:hover .overlay {
     opacity: 1;
 }
+.menu:hover h4, .menu:hover #color-h4, .menu:hover i, .link-playlist li:hover a{
+    color: var(--fiveth-color);
+}
+.menu:hover img, .menu:hover #color-svg {
+    filter: opacity(1);
+}
 
 /*----RESPONSIVE-----*/
 
@@ -112,5 +196,20 @@ HOVER E PSEUDO ELEMENTI
     }
     .width-right {
         width: calc(100% - 3.75rem);
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .my-col-icons-left {
+        width: 100%;
+    }
+    .my-col-icons-right {
+        display: none;
+    }
+    .section-playlist {
+        display: none;
     }
 }
