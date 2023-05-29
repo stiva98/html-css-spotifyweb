@@ -38,6 +38,10 @@ ASIDE
 #color-svg {
     filter: opacity(0.5);
 }
+#color-svg-2 {
+    filter: opacity(0.5);
+    width: 30%;
+}
 .my-col-icons-right {
     width: 80%;
 }
@@ -89,6 +93,56 @@ section .container > h2{
     overflow-y: auto;
     height: 35vh;
 }
+.section-playlist {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.user {
+    padding: .625rem 0;
+}
+.installation {
+    display: flex;
+    border-bottom: 1px solid var(--second-color);
+    margin-bottom: .625rem;
+}
+.icon-left {
+    width: 10%;
+}
+.icon-left > img {
+    filter: opacity(0.5);
+    width: 80%;
+}
+.icon-right {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding-bottom: .1563rem;
+}
+.icon-right > h4 {
+    color: var(--second-color);
+    font-size: 0.5rem;
+    padding: 0.125rem 0.125rem;
+}
+.profile {
+    display: flex;
+}
+.icon-left-2 {
+    width: 30%;
+}
+.icon-left-2 > img{
+    width: 1.875rem;
+    height: 1.875rem;
+    background-color: var(--second-color);
+    border-radius: 50%;
+}
+.icon-right-2 {
+    width: 70%;
+}
+.icon-right-2 > h4 {
+    color: white;
+    font-size: .875rem;
+}
 /*
 MAIN-CONTAINER
 */
@@ -99,6 +153,9 @@ MAIN-CONTAINER
 aside {
     width: 12.5rem;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 18.75rem;
 }
 
 .width-right {
@@ -134,6 +191,8 @@ FOOTER
 footer {
     height: 6.25rem;
     background-color: var(--third-color);
+    position: relative;
+    display: flex;
 }
 
 /*
@@ -165,6 +224,12 @@ HOVER E PSEUDO ELEMENTI
 }
 .menu:hover img, .menu:hover #color-svg {
     filter: opacity(1);
+}
+.installation:hover img{
+    filter: opacity(1);
+} 
+.installation:hover h4 {
+    color: var(--fiveth-color);
 }
 
 /*----RESPONSIVE-----*/
@@ -209,7 +274,29 @@ HOVER E PSEUDO ELEMENTI
     .my-col-icons-right {
         display: none;
     }
-    .section-playlist {
+    .mob-none {
         display: none;
+    }
+    .menu .my-col-playlist-left, .menu .my-col-playlist-right {
+        display: none;
+    }
+    .link-playlist {
+        display: none;
+    }
+    .icon-right, .icon-right-2 {
+        display: none;
+    }
+    .installation {
+        border: none;
+    }
+    .icon-left {
+        width: 50%;
+    }
+    .icon-left > img{
+        width: 100%;
+        margin-left: .1563rem;
+    }
+    .container-playlist {
+        justify-content: flex-end;
     }
 }
