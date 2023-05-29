@@ -192,9 +192,106 @@ footer {
     height: 6.25rem;
     background-color: var(--third-color);
     position: relative;
+}
+.my-song {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.song-listening {
+    display: flex;
+    align-items: center; 
+}
+.photo-album {
+    width: 3.75rem;
+    height: 3.75rem;
+}
+.photo-album > img {
+    width: 100%;
+    height: 100%;  
+}
+.name-album {
+    padding-left: .625rem;
+    padding-right: .625rem;
+}
+.name-album > h4 {
+    color: white;
+}
+.name-album > h5 {
+    color: var(--second-color);
+}
+.icon > i {
+    color: var(--second-color);
+    cursor: pointer;
+}
+.icon > i:first-of-type {
+    color: var(--second-color);
+    padding: 0 .625rem;
+}
+.icon-2 > i {
+    color: var(--seventh-color);
+}
+.icon-2 > i:first-of-type {
+    color: var(--seventh-color);
+    padding: 0 .625rem;
+}
+.icon-2 {
+    min-width: 3.125rem;
+}
+.audio > i {
+    color: var(--seventh-color);
+}
+.buttons-minutes {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.25rem;
+}
+.buttons {
     display: flex;
 }
-
+.buttons > button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    padding: 0.625rem;
+}
+.minutes {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.minute {
+    color: white;
+    font-size: .625rem;
+    font-weight: bold;
+}
+.progression {
+    width: 100%;
+    height: .3125rem;
+    background-color: var(--second-color);
+    cursor: pointer;
+    margin: 0 1.25rem;
+}
+.progressive-minutes {
+    width: 30%;
+    height: .3125rem;
+    background-color: var(--seventh-color);
+    position: relative;
+}
+.volume {
+    display: flex;
+    width: 15%;
+}
+.audio {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 10px;
+}
 /*
 HOVER E PSEUDO ELEMENTI
 */
@@ -205,6 +302,17 @@ HOVER E PSEUDO ELEMENTI
     background-color: var(--sixth-color);
     display: block;
     margin: 5px auto;
+}
+.progressive-minutes::after {
+    content: "";
+    width: .625rem;
+    height: .625rem;
+    border-radius: 50%;
+    background-color: transparent;
+    display: block;
+    position: absolute;
+    top: -2.5px;
+    right: -2.5px;
 }
 .my-button-header:hover {
     transform: scale(1.2);
@@ -230,6 +338,22 @@ HOVER E PSEUDO ELEMENTI
 } 
 .installation:hover h4 {
     color: var(--fiveth-color);
+}
+.name-album:hover h5 {
+    text-decoration: underline;
+    color: var(--fiveth-color);
+}
+.icon i:hover {
+    color: var(--fiveth-color);
+}
+.buttons #play:hover {
+    transform: scale(1.2);
+}
+.progression:hover .progressive-minutes::after {
+    background-color: black;
+}
+.progression:hover .progressive-minutes {
+    background-color: var(--sixth-color);
 }
 
 /*----RESPONSIVE-----*/

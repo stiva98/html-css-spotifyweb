@@ -1,419 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Web</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify Web</title>
 
-    <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!--CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
-    <main class="main-container">
+        <!--GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        
+        <!--CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <main class="main-container">
 
-        <aside>
-            <section>
-                <div class="container">
-                    <div class="logo">
-                        <img src="img/logo.svg" alt="Spotify" class="desktop">
-                        <img src="img/logo-small.svg" alt="Spotify" class="mobile">
+            <aside>
+                <section>
+                    <div class="container">
+                        <div class="logo">
+                            <img src="img/logo.svg" alt="Spotify" class="desktop">
+                            <img src="img/logo-small.svg" alt="Spotify" class="mobile">
+                        </div>
                     </div>
-                </div>
+                </section>
+
+                <section>
+                    <div class="container-border border">
+                        <div class="menu">
+                            <div class="my-col-icons-left">
+                                <img src="img/home.svg" alt="home" class="">
+                            </div>
+
+                            <div class="my-col-icons-right">
+                                <h4>
+                                    Home
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="menu">
+                            <div class="my-col-icons-left">
+                                <img src="img/search.svg" alt="search" id="color-svg">
+                            </div>
+
+                            <div class="my-col-icons-right">
+                                <h4 id="color-h4">
+                                    Cerca
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="menu">
+                            <div class="my-col-icons-left">
+                                <img src="img/libreria.svg" alt="libreria" id="color-svg">
+                            </div>
+
+                            <div class="my-col-icons-right">
+                                <h4 id="color-h4">
+                                    La tua libreria
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-playlist">
+                    <div class="container">
+                        <h2 class="mob-none">
+                            PLAYLIST
+                        </h2>
+
+                        <div class="menu">
+                            <div class="my-col-playlist-left">
+                                <i class="fa-sharp fa-solid fa-square-plus fa-3x"></i>
+                            </div>
+
+                            <div class="my-col-playlist-right">
+                                <h4>
+                                    Crea Playlist
+                                </h4>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="container-playlist">
+
+                        <div class="link-playlist">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Nome Playlist
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Nome Playlist
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Nome Playlist
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Nome Playlist
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Nome Playlist
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        Nome Playlist
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#">
+                                        Nome Playlist
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                    
+
+                        <div class="user">
+                            <div class="installation">
+                                <div class="icon-left">
+                                    <img src="img/download.svg" alt="download">
+                                </div>
+
+                                <div class="icon-right">
+                                    <h4>
+                                        Installa App
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="profile">
+                                <div class="icon-left-2">
+                                    <img src="img/profile.svg" alt="profile">
+                                </div>
+
+                                <div class="icon-right-2">
+                                    <h4>
+                                        Samuele Stivaletti
+                                    </h4>
+            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+
+            <section class="width-right">
+
+                <header>
+                    <button class="my-button-header">
+                        EFFETTUA L'UPGRADE
+                    </button>
+                </header>
+
+                <section class="section-overflow">
+
+                    <div class="container">
+
+                        <nav>
+                            <ul>
+                                <li class="mini-border">
+                                    <a href="#">IN EVIDENZA</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">PODCAST</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">CLASSIFICHE</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">GENERI E MOOD</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">NUOVE USCITE</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">SCOPRI</a>
+                                </li>
+
+                            </ul>
+                        </nav>
+
+                    </div>
+
+                    <div class="container">
+                        <h2>
+                            Recently played
+                        </h2>
+
+                        <div class="my-cards-music">
+                            <div class="my-card">
+                                <div class="song">
+                                    <div class="image-cover">
+                                        <img src="img/metal_lifting.jpg" alt="metal_lifting" class="dimension-image">
+                                        <div class="overlay">
+                                            <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        Heavy Metal
+                                    </h4>
+                                    <p>
+                                        Subtitle
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="my-card">
+                                <div class="song">
+                                    <div class="image-cover">
+                                        <img src="img/stranger.jpeg" alt="Stranger" class="dimension-image">
+                                        <div class="overlay">
+                                            <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        Stranger Thinks, Vol. 1 (a Netflix Original Series Soundtrack)
+                                    </h4>
+                                    <p>
+                                        Kyle Dixon e Michael Stean
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="my-card">
+                                <div class="song">
+                                    <div class="image-cover">
+                                        <img src="img/aquietplace.jpeg" alt="aquietplace" class="dimension-image">
+                                        <div class="overlay">
+                                            <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        A quiet place
+                                    </h4>
+                                    <p>
+                                        Subtitle
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="my-card">
+                                <div class="song">
+                                    <div class="image-cover">
+                                        <img src="img/split.jpeg" alt="split" class="dimension-image">
+                                        <div class="overlay">
+                                            <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        Split
+                                    </h4>
+                                    <p>
+                                        Subtitle
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="my-card">
+                                <div class="song">
+                                    <div class="image-cover">
+                                        <img src="img/cure.jpeg" alt="cure" class="dimension-image">
+                                        <div class="overlay">
+                                            <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        A cure for wellness
+                                    </h4>
+                                    <p>
+                                        Subtitle
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="my-card">
+                                <div class="song">
+                                    <div class="image-cover">
+                                        <img src="img/sinister.jpeg" alt="sinister" class="dimension-image">
+                                        <div class="overlay">
+                                            <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        Sinister
+                                    </h4>
+                                    <p>
+                                        Subtitle
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <h2>
+                            Creato per John Doe
+                        </h2>
+
+                        <p>
+                            Più ascolti, più accurati saranno i suggerimenti
+                        </p>
+
+                        <div class="my-cards-music">
+                            <div class="my-card">
+                                <div class="song">
+                                    <div class="image-cover">
+                                        <img src="img/radar.jpeg" alt="radar" class="dimension-image">
+                                        <div class="overlay">
+                                            <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        Release Radar
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="my-card">
+                                <div class="song">
+                                    <div class="image-cover">
+                                        <img src="img/mixdaily.jpeg" alt="Dailymix" class="dimension-image">
+                                        <div class="overlay">
+                                            <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        Daily Mix 1
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <div class="container">
+                        <h2>
+                            Artisti più poolari
+                        </h2>
+
+                        <p>
+                            Più ascolti, più accurati saranno i suggerimenti
+                        </p>
+
+                        <div class="my-cards-music">
+                            <div class="my-card">
+                                <div class="song">
+                                    <div class="image-cover">
+                                        <img src="img/youg.jpeg" alt="lanadelrey" class="dimension-image square">
+                                        <div class="overlay">
+                                            <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        Lana Del Rey
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="my-card">
+                                <div class="song">
+                                    <div class="image-cover">
+                                        <img src="img/einaudi.jpeg" alt="Einaudi" class="dimension-image square">
+                                        <div class="overlay">
+                                            <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        Ludovico Einaudi
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </section>
+
             </section>
 
-            <section>
-                <div class="container-border border">
-                    <div class="menu">
-                        <div class="my-col-icons-left">
-                            <img src="img/home.svg" alt="home" class="">
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="my-song">
+
+                    <div class="song-listening">
+                        <div class="photo-album">
+                            <img src="https://www.universalmusic.it/dbcommon/file/cover/30038354772.jpg" alt="fabri fibra">
                         </div>
 
-                        <div class="my-col-icons-right">
+                        <div class="name-album">
                             <h4>
-                                Home
+                                Applausi per Fibra
                             </h4>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="container">
-                    <div class="menu">
-                        <div class="my-col-icons-left">
-                            <img src="img/search.svg" alt="search" id="color-svg">
+                            <h5>
+                                Fabri Fibra
+                            </h5>
                         </div>
 
-                        <div class="my-col-icons-right">
-                            <h4 id="color-h4">
-                                Cerca
-                            </h4>
+                        <div class="icon">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-folder"></i>
                         </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="menu">
-                        <div class="my-col-icons-left">
-                            <img src="img/libreria.svg" alt="libreria" id="color-svg">
-                        </div>
-
-                        <div class="my-col-icons-right">
-                            <h4 id="color-h4">
-                                La tua libreria
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-playlist">
-                <div class="container">
-                    <h2 class="mob-none">
-                        PLAYLIST
-                    </h2>
-
-                    <div class="menu">
-                        <div class="my-col-playlist-left">
-                            <i class="fa-sharp fa-solid fa-square-plus fa-3x"></i>
-                        </div>
-
-                        <div class="my-col-playlist-right">
-                            <h4>
-                                Crea Playlist
-                            </h4>
-                        </div>
-                    </div>
-                </div> 
-
-                <div class="container-playlist">
-
-                    <div class="link-playlist">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    Nome Playlist
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    Nome Playlist
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    Nome Playlist
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    Nome Playlist
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    Nome Playlist
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    Nome Playlist
-                                </a>
-                            </li>
-                            
-                            <li>
-                                <a href="#">
-                                    Nome Playlist
-                                </a>
-                            </li>
-                            
-                        </ul>
                     </div>
                     
-                
+                    <div class="buttons-minutes">
+                        <div class="buttons">
+                            <button>
+                                <i class="fa-solid fa-shuffle"></i>
+                            </button>
 
-                    <div class="user">
-                        <div class="installation">
-                            <div class="icon-left">
-                                <img src="img/download.svg" alt="download">
-                            </div>
+                            <button>
+                                <i class="fa-solid fa-backward-step"></i>
+                            </button>
 
-                            <div class="icon-right">
-                                <h4>
-                                    Installa App
-                                </h4>
-                            </div>
+                            <button id="play">
+                                <i class="fa-regular fa-circle-play fa-2x"></i>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-forward-step"></i>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-arrow-rotate-right"></i>
+                            </button>
                         </div>
 
-                        <div class="profile">
-                            <div class="icon-left-2">
-                                <img src="img/profile.svg" alt="profile">
+                        <div class="minutes">
+                            <div class="minute">
+                                0.25
                             </div>
 
-                            <div class="icon-right-2">
-                                <h4>
-                                    Samuele Stivaletti
-                                </h4>
-        
+                            <div class="progression">
+                                <div class="progressive-minutes">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="minute">
+                                4.35
+                            </div>
+                        </div>
+                    </div>    
+            
+                    <div class="volume">
+                        <div class="icon-2">
+                            <i class="fa-solid fa-list"></i>
+                            <i class="fa-solid fa-tv"></i>
+                        </div>
+                        
+                        <div class="audio">
+                            <i class="fa-solid fa-volume-high"></i>
+                            <div class="progression">
+                                <div class="progressive-minutes">
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </aside>
-
-        <section class="width-right">
-
-            <header>
-                <button class="my-button-header">
-                    EFFETTUA L'UPGRADE
-                </button>
-            </header>
-
-            <section class="section-overflow">
-
-                <div class="container">
-
-                    <nav>
-                        <ul>
-                            <li class="mini-border">
-                                <a href="#">IN EVIDENZA</a>
-                            </li>
-
-                            <li>
-                                <a href="#">PODCAST</a>
-                            </li>
-
-                            <li>
-                                <a href="#">CLASSIFICHE</a>
-                            </li>
-
-                            <li>
-                                <a href="#">GENERI E MOOD</a>
-                            </li>
-
-                            <li>
-                                <a href="#">NUOVE USCITE</a>
-                            </li>
-
-                            <li>
-                                <a href="#">SCOPRI</a>
-                            </li>
-
-                        </ul>
-                    </nav>
 
                 </div>
-
-                <div class="container">
-                    <h2>
-                        Recently played
-                    </h2>
-
-                    <div class="my-cards-music">
-                        <div class="my-card">
-                            <div class="song">
-                                <div class="image-cover">
-                                    <img src="img/metal_lifting.jpg" alt="metal_lifting" class="dimension-image">
-                                    <div class="overlay">
-                                        <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
-                                    </div>
-                                </div>
-                                <h4>
-                                    Heavy Metal
-                                </h4>
-                                <p>
-                                    Subtitle
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="my-card">
-                            <div class="song">
-                                <div class="image-cover">
-                                    <img src="img/stranger.jpeg" alt="Stranger" class="dimension-image">
-                                    <div class="overlay">
-                                        <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
-                                    </div>
-                                </div>
-                                <h4>
-                                    Stranger Thinks, Vol. 1 (a Netflix Original Series Soundtrack)
-                                </h4>
-                                <p>
-                                    Kyle Dixon e Michael Stean
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="my-card">
-                            <div class="song">
-                                <div class="image-cover">
-                                    <img src="img/aquietplace.jpeg" alt="aquietplace" class="dimension-image">
-                                    <div class="overlay">
-                                        <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
-                                    </div>
-                                </div>
-                                <h4>
-                                    A quiet place
-                                </h4>
-                                <p>
-                                    Subtitle
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="my-card">
-                            <div class="song">
-                                <div class="image-cover">
-                                    <img src="img/split.jpeg" alt="split" class="dimension-image">
-                                    <div class="overlay">
-                                        <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
-                                    </div>
-                                </div>
-                                <h4>
-                                    Split
-                                </h4>
-                                <p>
-                                    Subtitle
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="my-card">
-                            <div class="song">
-                                <div class="image-cover">
-                                    <img src="img/cure.jpeg" alt="cure" class="dimension-image">
-                                    <div class="overlay">
-                                        <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
-                                    </div>
-                                </div>
-                                <h4>
-                                    A cure for wellness
-                                </h4>
-                                <p>
-                                    Subtitle
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="my-card">
-                            <div class="song">
-                                <div class="image-cover">
-                                    <img src="img/sinister.jpeg" alt="sinister" class="dimension-image">
-                                    <div class="overlay">
-                                        <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
-                                    </div>
-                                </div>
-                                <h4>
-                                    Sinister
-                                </h4>
-                                <p>
-                                    Subtitle
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <h2>
-                        Creato per John Doe
-                    </h2>
-
-                    <p>
-                        Più ascolti, più accurati saranno i suggerimenti
-                    </p>
-
-                    <div class="my-cards-music">
-                        <div class="my-card">
-                            <div class="song">
-                                <div class="image-cover">
-                                    <img src="img/radar.jpeg" alt="radar" class="dimension-image">
-                                    <div class="overlay">
-                                        <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
-                                    </div>
-                                </div>
-                                <h4>
-                                    Release Radar
-                                </h4>
-                            </div>
-                        </div>
-
-                        <div class="my-card">
-                            <div class="song">
-                                <div class="image-cover">
-                                    <img src="img/mixdaily.jpeg" alt="Dailymix" class="dimension-image">
-                                    <div class="overlay">
-                                        <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
-                                    </div>
-                                </div>
-                                <h4>
-                                    Daily Mix 1
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-                
-                <div class="container">
-                    <h2>
-                        Artisti più poolari
-                    </h2>
-
-                    <p>
-                        Più ascolti, più accurati saranno i suggerimenti
-                    </p>
-
-                    <div class="my-cards-music">
-                        <div class="my-card">
-                            <div class="song">
-                                <div class="image-cover">
-                                    <img src="img/youg.jpeg" alt="lanadelrey" class="dimension-image square">
-                                    <div class="overlay">
-                                        <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
-                                    </div>
-                                </div>
-                                <h4>
-                                    Lana Del Rey
-                                </h4>
-                            </div>
-                        </div>
-
-                        <div class="my-card">
-                            <div class="song">
-                                <div class="image-cover">
-                                    <img src="img/einaudi.jpeg" alt="Einaudi" class="dimension-image square">
-                                    <div class="overlay">
-                                        <i class="fa-regular fa-circle-play fa-5x" style="color: #ffffff;"></i>
-                                    </div>
-                                </div>
-                                <h4>
-                                    Ludovico Einaudi
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>        
-            </section>
-
-        </section>
-
-    </main>
-
-    <footer>
-
-    </footer>
+            
+            </div>
     
-</body>
+        </footer>
+        
+    </body>
 </html>
